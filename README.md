@@ -32,13 +32,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+The Document Object Model (DOM) is the interface the developer has with the browser as the browser transforms the HTML, CSS, and JS files that it has been provided into a visible and potentially interactive display. The document itself is an Object in terms of JavaScript which can be called on to manipulate the display, this is our interface.
+
 2. What is an event?
+
+In web development terms, an event is anything that the browser (and therefore the DOM) can listen for and respond to, generally an action on the user side, such as a click, but it can also be internal, such as an animation starting or stopping.
 
 3. What is an event listener?
 
+An event listener is a piece of code that instructs the browser, through the DOM, to listen for events of a specific kind (delineated by a 'string') and respond to them in a defined manner, e.g. a function.
+
 4. Why would we convert a NodeList into an Array?
 
+NodeList is an Array-like object. Because it is an Array-like object but not an Array, it has access to some but not all Array methods. If we want to use non-included Array methods, or even if we want to have a more ordered list, we would convert the NodeList into an Array.
+
 5. What is a component?
+
+A component is a piece of code that is as detachable and reusable as possible, making it easy to integrate into a new project. Because it has minimal dependencies and is functional in itself, it can be reused to realize a specific part of many different projects quickly. The most classic example in web development would probably be the navigation bar, which remains largely similar throughout a series of web pages while being integrated into every page of the site.
 
 ### Git Set up
 
